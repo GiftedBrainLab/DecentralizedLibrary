@@ -112,8 +112,11 @@ const Navbar = () => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
+            <a href="/liveclass" rel="noreferrer">
+              <ButtonOutline>Go Live</ButtonOutline>
+            </a>
             <a href="https://discord.gg/hecVfZda" target="_blank" rel="noreferrer">
-              <ButtonOutline>Join our community</ButtonOutline>
+              <ButtonOutline>Join community</ButtonOutline>
             </a>
           </div>
         </nav>
