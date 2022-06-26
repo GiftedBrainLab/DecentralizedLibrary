@@ -21,7 +21,7 @@ import PhysicalVideos from "./pages/physicalvid/physicalvid";
 import Mint from "./mint/mint";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/">
     <Routes>
 
       <Route path="/" element={<App />} />

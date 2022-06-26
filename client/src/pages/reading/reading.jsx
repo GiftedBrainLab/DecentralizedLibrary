@@ -34,7 +34,7 @@ export default function ReadBook() {
 
   async function loadBooks() {
     /* create a generic provider and query for unsold market items */
-    const provider = new ethers.providers.JsonRpcProvider("http://localhost:8545");
+    const provider = new ethers.providers.JsonRpcProvider("https://matic-mumbai.chainstacklabs.com");
     const contract = new ethers.Contract(EbookAddress, Ebook.abi, provider);
     const data = await contract.fetchAllLibraryItems();
     console.log("book data fetched from contract");

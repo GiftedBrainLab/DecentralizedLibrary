@@ -22,15 +22,29 @@ Choose one of the following options to get started:
 
 ## Running the frontpage
 
-- cd Decentralized_Library_V2 
-- on terminal install the node modules with "run npm install"
+- cd DecentralizedLibrary
+- cd client
+- run npm install >>> (to install the node modules)
 - then run "npm run dev"
 
 ## Spin a localhost blockchain with hardhat
 
+- From root directory,
+- cd smart_contract
 - npx hardhat node
 - npx hardhat run scripts/deploy.js --network localhost
 - npm run dev
+
+## Before testing on localhost do the following
+- Using your IDE or text editor,
+- Go to client>>src>>pages>>csbooks>>csbooks.jsx and change the JsonRpcProvider to http://localhost:8545 on line 32
+- do same for pages>>csvideo>>csvideo.jsx
+- do same for pages>>reading>>reading.jsx
+- do same for pages>>watching>>watching.jsx
+
+once the jsonRpcProvider is changed to localhost, you can test the Dapp.
+
+Happy testing
 
 ## dependancies
 npm install ethers hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers web3modal @openzeppelin/contracts axios

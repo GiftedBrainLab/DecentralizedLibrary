@@ -106,7 +106,7 @@ export default function CSBook() {
                   className="py-3 object-fill"
                 />
                 <div className="p-2">
-                  <p style={{ height: "64px" }} className="text-2xl font-semibold">Title: {nft.name}</p>
+                  <p style={{ height: "64px" }} className="text-xl text-red-500 font-semibold">Title: {nft.name}</p>
                   <p style={{ height: "44px" }} className="text-xl font-semibold">Author(s):{nft.author}</p>
                   <div style={{ height: "70px", overflow: "hidden" }}>
                     <p className="text-gray-700">Description: {nft.description}</p>
