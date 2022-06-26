@@ -1,4 +1,4 @@
-import{E as wr,G as yr}from"./lib.4e0eec76.js";var sr={};/*!
+import{E as wr,G as yr}from"./lib.5acd461b.js";var sr={};/*!
  * The buffer module from node.js, for the browser.
  *
  * @author   Feross Aboukhadijeh <https://feross.org>

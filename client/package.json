@@ -1,9 +1,10 @@
 {
   "name": "decentralized-library",
   "version": "1.0.0",
+  "homepage": "https://decentralized-library.vercel.app/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=./",
+    "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {

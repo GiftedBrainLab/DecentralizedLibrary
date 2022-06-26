@@ -55,6 +55,10 @@ npm install ethers hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomic
 - or
 - npx hardhat run scripts/deploy.js --network polygon
 
+## Quiz Url
+Quiz url is https://delibrary-quiz-5vdhj9oa-holyaustin.4everland.app/
+
+repo for quiz is: 
 
 ## Creator
 

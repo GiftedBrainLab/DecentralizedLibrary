@@ -18,7 +18,7 @@ import CsVideos from "./pages/csvideos/csvideos";
 import WatchVideos from "./pages/watching/watching";
 import CatVideos from "./pages/catvideos/catvideos";
 import PhysicalVideos from "./pages/physicalvid/physicalvid";
-import Mint from "./mint/mint";
+import Mint from "./pages/mint/mint";
 
 ReactDOM.render(
   <BrowserRouter basename="/">

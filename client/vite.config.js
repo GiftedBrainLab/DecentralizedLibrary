@@ -33,7 +33,7 @@ export default defineConfig({
         physicalvid: resolve(root, "pages/physicalvid", "index.html"),
         watching: resolve(root, "pages/watching", "index.html"),
         profile: resolve(root, "pages/profile", "index.html"),
-        mint: resolve(root, "mint", "index.html"),
+        mint: resolve(root, "pages/mint", "index.html"),
       }
     }
   }
