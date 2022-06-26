@@ -21,13 +21,13 @@ import PhysicalVideos from "./pages/physicalvid/physicalvid";
 import Mint from "./pages/mint/mint";
 
 ReactDOM.render(
-  <BrowserRouter basename="/">
+  <BrowserRouter>
     <Routes>
 
       <Route path="/" element={<App />} />
       <Route path="traverse" element={<TraversePage />} />
       <Route path="liveclass" element={<Liveclass />} />
-      <Route path="create" element={<Create />} />
+      <Route path="pages/create" element={<Create />} />
       <Route path="coming-soon" element={<Coming />} />
 
       <Route path="mint" element={<Mint />} />
@@ -38,7 +38,7 @@ ReactDOM.render(
       <Route path="physical-science" element={<PhysicalScienceEbooks />} />
       <Route path="csbooks" element={<CsBooks />} />
       <Route path="reading" element={<ReadBook />} />
-      <Route path="csvideos" element={<CsVideos />} />
+      <Route path="pages/csvideos" element={<CsVideos />} />
       <Route path="watching" element={<WatchVideos />} />
       <Route path="catvideos" element={<CatVideos />} />
       <Route path="physicalvid" element={<PhysicalVideos />} />
