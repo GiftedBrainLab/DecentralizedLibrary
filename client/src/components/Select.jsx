@@ -13,10 +13,10 @@ const Select = () => (
         </h3> <br /> <br />
 
         <div className="flex flex-row my-20 ml-10 mr-10 space-x-14  text-3xl">
-          <a href="/ebooks/create-ebook">
+          <a href="/create-ebook">
             <ButtonPrimary>Create Ebook</ButtonPrimary>
           </a>
-          <a href="/videobooks/create-videobook">
+          <a href="/create-videobook">
             <ButtonPrimary>Create Video Book</ButtonPrimary>
           </a>
         </div>

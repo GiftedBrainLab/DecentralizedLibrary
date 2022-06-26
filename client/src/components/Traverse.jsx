@@ -13,10 +13,10 @@ const Traverse = () => (
         </h3> <br /> <br />
 
         <div className="flex flex-row my-20 ml-10 mr-10  space-x-14 text-3xl">
-          <a href="/ebooks/catebooks">
+          <a href="/catebooks">
             <ButtonPrimary>Traverse Ebooks</ButtonPrimary>
           </a>
-          <a href="videobooks/catvideos">
+          <a href="/catvideos">
             <ButtonPrimary>Traverse Video Books</ButtonPrimary>
           </a>
         </div>

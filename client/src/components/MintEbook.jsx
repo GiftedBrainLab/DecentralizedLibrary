@@ -106,7 +106,7 @@ const MintEbook = () => {
     // 3. preview the minted nft
     previewNFT(metaData, mintNFTTx);
 
-    navigate("/ebooks/csbooks");
+    navigate("/csbooks");
   };
 
   const getIPFSGatewayURL = (ipfsURL) => {

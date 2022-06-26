@@ -9,7 +9,7 @@ import {
 } from "@heroicons/react/solid";
 
 const gencat = [
-  { name: "Physical science", href: "/ebooks/physical-science", icon: DesktopComputerIcon },
+  { name: "Physical science", href: "/physical-science", icon: DesktopComputerIcon },
   { name: "Humanities", href: "/coming-soon", icon: CalculatorIcon },
   { name: "Social science", href: "/coming-soon", icon: CurrencyDollarIcon },
   { name: "Natural science", href: "/coming-soon", icon: BeakerIcon },
