@@ -1,4 +1,4 @@
-import { Navbar, Footer, Select } from "../../components";
+import { Navbar, Footer, Select } from "../components";
 
 const Create = () => (
   <div className="w-full bg-gray-500">

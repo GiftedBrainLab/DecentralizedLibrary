@@ -8,7 +8,7 @@ import TraversePage from "./pages/traverse/traverse";
 import Coming from "./pages/comingsoon/comingsoon";
 import Liveclass from "./pages/liveclass/liveclass";
 import CreateEbook from "./pages/create-ebook/create-ebook";
-import Create from "./pages/create/create";
+import Create from "./create/create";
 import CreateVideo from "./pages/create-videobook/create-videobook";
 import Catebooks from "./pages/catebooks/catebooks";
 import PhysicalScienceEbooks from "./pages/physicalscience/physicalscience";
@@ -27,8 +27,8 @@ ReactDOM.render(
       <Route path="/" element={<App />} />
       <Route path="traverse" element={<TraversePage />} />
       <Route path="liveclass" element={<Liveclass />} />
-      <Route path="pages/create" element={<Create />} />
-      <Route path="coming-soon" element={<Coming />} />
+      <Route path="create" element={<Create />} />
+      <Route path="comingsoon" element={<Coming />} />
 
       <Route path="mint" element={<Mint />} />
       <Route path="create-videobook" element={<CreateVideo />} />
