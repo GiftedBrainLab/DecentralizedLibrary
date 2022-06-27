@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "../assets2/library-logo.svg";
-import Facebook from "../assets2/Icon/facebook.svg";
-import Twitter from "../assets2/Icon/twitter.svg";
-import Instagram from "../assets2/Icon/instagram.svg";
+import Logo from "../assets/library-logo.svg";
+import Facebook from "../assets/Icon/facebook.svg";
+import Twitter from "../assets/Icon/twitter.svg";
+import Instagram from "../assets/Icon/instagram.svg";
 
 const Footer = () => (
   <div className="bg-gray-100 pt-20 pb-24">

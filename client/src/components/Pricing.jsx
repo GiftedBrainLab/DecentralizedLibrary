@@ -1,9 +1,9 @@
 import React from "react";
 import ButtonOutline from "./misc/ButtonOutline.";
-import Maps from "../assets2/HugeGlobal.svg";
-import UserPlan from "../assets2/Free.png";
-import Standard from "../assets2/Standard.png";
-import Premium from "../assets2/Premium.png";
+import Maps from "../assets/HugeGlobal.svg";
+import UserPlan from "../assets/Free.png";
+import Standard from "../assets/Standard.png";
+import Premium from "../assets/Premium.png";
 
 const Pricing = () => (
   <div

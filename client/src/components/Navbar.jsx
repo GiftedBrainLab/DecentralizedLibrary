@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "./misc/ButtonOutline.";
-import Logo from "../assets2/library-logo.svg";
+import Logo from "../assets/library-logo.svg";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState(null);

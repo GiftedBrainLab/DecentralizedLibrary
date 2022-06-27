@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets2/Illustration2.png";
+import Image from "../assets/Illustration2.png";
 
 const Feature = () => (
   <div

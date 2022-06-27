@@ -14,4 +14,3 @@ export { default as MintVideo } from "./MintVideo";
 export { default as Select } from "./Select";
 export { default as Traverse } from "./Traverse";
 export { default as Roadmap } from "./Roadmap";
-// export { default as Login } from "./Login";

@@ -1,13 +1,14 @@
 /* eslint-disable max-len */
 import React from "react";
-//import { Login } from "../components";
+import { Link } from "react-router-dom";
+// import { Login } from "../components";
 
 import ButtonPrimary from "./misc/ButtonPrimary";
-import Users from "../assets2/Icon/heroicons_sm-user.svg";
-import Locations from "../assets2/Icon/gridicons_location.svg";
-import Creators from "../assets2/Icon/bx_bxs-server.svg";
-import Student from "../assets2/Illustration1.png";
- 
+import Users from "../assets/Icon/heroicons_sm-user.svg";
+import Locations from "../assets/Icon/gridicons_location.svg";
+import Creators from "../assets/Icon/bx_bxs-server.svg";
+import Student from "../assets/Illustration1.png";
+
 const Hero = ({
   listUser = [
     {
@@ -26,9 +27,7 @@ const Hero = ({
       icon: Creators,
     },
   ],
-}
-
-) => (
+}) => (
   <div className="max-w-screen-xl mt-20 px-8 xl:px-16 mx-auto" id="about">
     <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16 ">
       <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
@@ -39,16 +38,15 @@ const Hero = ({
           A web3 library that offers you the opportunity to learn and earn. We offer you you diversity of learning resources both as ebooks and video-books. Materials are curated from various categories. Connect your wallet, select a category, select a book to read or watch a video book, take the quiz and earn NFTs.
         </p>
         <div className="flex flex-row my-5 ml-2 mr-2 space-x-8 text-2xl">
-          <a href="/traverse">
+          <Link to="/traverse">
             <ButtonPrimary>Traverse Library</ButtonPrimary>
-          </a>
-          <a href="/create">
+          </Link>
+          <Link to="/create">
             <ButtonPrimary>Create Collections</ButtonPrimary>
-          </a>
-          
+          </Link>
+
         </div>
-        <div>
-          </div>
+        <div />
       </div>
       <div className="flex w-full">
         <div className="h-full w-full mt-10">

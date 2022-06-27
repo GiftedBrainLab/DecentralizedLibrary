@@ -1,4 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
+
 import { resolve } from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
@@ -17,10 +18,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(root, "index.html"),
+        create: resolve(root, "create", "index.html"),
         traverse: resolve(root, "pages/traverse", "index.html"),
         liveclass: resolve(root, "pages/liveclass", "index.html"),
         comingsoon: resolve(root, "pages/comingsoon", "index.html"),
-        create: resolve(root, "create", "index.html"),
+
         dashboard: resolve(root, "pages/dashboard", "index.html"),
         catebooks: resolve(root, "pages/catebooks", "index.html"),
         createebook: resolve(root, "pages/create-ebook", "index.html"),

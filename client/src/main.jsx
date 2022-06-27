@@ -4,11 +4,11 @@ import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import App from "./App";
 // import { TransactionsProvider } from "./context/TransactionContext";
 import "./index.css";
+import Create from "./create/create";
 import TraversePage from "./pages/traverse/traverse";
 import Coming from "./pages/comingsoon/comingsoon";
 import Liveclass from "./pages/liveclass/liveclass";
 import CreateEbook from "./pages/create-ebook/create-ebook";
-import Create from "./create/create";
 import CreateVideo from "./pages/create-videobook/create-videobook";
 import Catebooks from "./pages/catebooks/catebooks";
 import PhysicalScienceEbooks from "./pages/physicalscience/physicalscience";
@@ -38,7 +38,7 @@ ReactDOM.render(
       <Route path="physical-science" element={<PhysicalScienceEbooks />} />
       <Route path="csbooks" element={<CsBooks />} />
       <Route path="reading" element={<ReadBook />} />
-      <Route path="pages/csvideos" element={<CsVideos />} />
+      <Route path="csvideos" element={<CsVideos />} />
       <Route path="watching" element={<WatchVideos />} />
       <Route path="catvideos" element={<CatVideos />} />
       <Route path="physicalvid" element={<PhysicalVideos />} />

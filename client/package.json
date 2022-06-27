@@ -1,6 +1,7 @@
 {
   "name": "decentralized-library",
   "version": "1.0.0",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
