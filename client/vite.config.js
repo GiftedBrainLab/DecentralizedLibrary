@@ -18,10 +18,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(root, "index.html"),
-        create: resolve(root, "create", "index.html"),
+        create: resolve(root, "pages/create", "index.html"),
         traverse: resolve(root, "pages/traverse", "index.html"),
         liveclass: resolve(root, "pages/liveclass", "index.html"),
-        comingsoon: resolve(root, "pages/comingsoon", "index.html"),
+        comingsoon: resolve(root, "pages/coming-soon", "index.html"),
 
         dashboard: resolve(root, "pages/dashboard", "index.html"),
         catebooks: resolve(root, "pages/catebooks", "index.html"),

@@ -1,8 +1,7 @@
 /* eslint-disable max-len */
 import React from "react";
-// import Image from "next/image";
+import { Link } from "react-router-dom";
 import ButtonPrimary from "./misc/ButtonPrimary";
-// import Student from "../assets2/Illustration1.png";
 
 const Traverse = () => (
   <div className="max-w-screen-xl mt-20 px-8 xl:px-16 mx-auto" id="about">
@@ -13,12 +12,12 @@ const Traverse = () => (
         </h3> <br /> <br />
 
         <div className="flex flex-row my-20 ml-10 mr-10  space-x-14 text-3xl">
-          <a href="/catebooks">
+          <Link to="/catebooks">
             <ButtonPrimary>Traverse Ebooks</ButtonPrimary>
-          </a>
-          <a href="/catvideos">
+          </Link>
+          <Link to="/catvideos">
             <ButtonPrimary>Traverse Video Books</ButtonPrimary>
-          </a>
+          </Link>
         </div>
       </div>
 

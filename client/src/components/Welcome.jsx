@@ -77,10 +77,10 @@ const Welcome = () => {
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 px-4">
         <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
           <h1 className="text-3xl sm:text-5xl text-white py-1">
-            PensionFi <br /> Retire Smart <br /> Retire Well
+            Decentralized <br /> Library <br />
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-            Explore the world of web3 pension investment. Choose where to invest and see you retirement fund grow.
+            Read, Learn and Earn
           </p>
           {!currentAccount && (
             <button
@@ -112,7 +112,7 @@ const Welcome = () => {
                 </p>
                 <br />
                 <p className="text-white font-semibold text-2xl mt-1">
-                  Ethereum Address of PensionFi User
+                  Polygon Address of Library User
                 </p>
 
               </div>

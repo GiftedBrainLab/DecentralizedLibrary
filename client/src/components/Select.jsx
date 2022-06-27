@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import React from "react";
+import { Link } from "react-router-dom";
 // import Image from "next/image";
 import ButtonPrimary from "./misc/ButtonPrimary";
 // import Student from "../assets2/Illustration1.png";
@@ -13,12 +14,12 @@ const Select = () => (
         </h3> <br /> <br />
 
         <div className="flex flex-row my-20 ml-10 mr-10 space-x-14  text-3xl">
-          <a href="/create-ebook">
+          <Link to="/create-ebook">
             <ButtonPrimary>Create Ebook</ButtonPrimary>
-          </a>
-          <a href="/create-videobook">
+          </Link>
+          <Link to="/create-videobook">
             <ButtonPrimary>Create Video Book</ButtonPrimary>
-          </a>
+          </Link>
         </div>
       </div>
 

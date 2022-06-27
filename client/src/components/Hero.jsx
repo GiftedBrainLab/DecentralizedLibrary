@@ -1,8 +1,6 @@
 /* eslint-disable max-len */
 import React from "react";
 import { Link } from "react-router-dom";
-// import { Login } from "../components";
-
 import ButtonPrimary from "./misc/ButtonPrimary";
 import Users from "../assets/Icon/heroicons_sm-user.svg";
 import Locations from "../assets/Icon/gridicons_location.svg";

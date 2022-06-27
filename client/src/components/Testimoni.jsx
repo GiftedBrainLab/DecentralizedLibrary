@@ -1,11 +1,12 @@
+/* eslint-disable react/no-unstable-nested-components */
 import React, { useState } from "react";
 
 // import react slick
 import Slider from "react-slick";
 // import Image from "next/image";
-import Stars from "../assets2/Icon/stars.svg";
-import ArrowBack from "../assets2/Icon/eva_arrow-back-fill.svg";
-import ArrowNext from "../assets2/Icon/eva_arrow-next-fill.svg";
+import Stars from "../assets/Icon/stars.svg";
+import ArrowBack from "../assets/Icon/eva_arrow-back-fill.svg";
+import ArrowNext from "../assets/Icon/eva_arrow-next-fill.svg";
 
 const Testimoni = ({
   listTestimoni = [
@@ -49,10 +50,10 @@ const Testimoni = ({
 }) => {
   const settings = {
     dots: true,
-    customPaging: function (i) {
+    customPaging(i) {
       return (
         <a href="/" className="">
-          <span className="mx-2 rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all "></span>
+          <span className="mx-2 rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all " />
         </a>
       );
     },

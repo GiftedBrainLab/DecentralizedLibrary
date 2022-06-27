@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "./misc/ButtonOutline.";
 import Logo from "../assets/library-logo.svg";
@@ -21,7 +22,7 @@ const Navbar = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4 font-medium">
           <div className="col-start-1 col-end-2 flex items-center font-semibold text-2xl text-orange-500">
-            <a href="/" className="pr-2">
+            <Link to="/" className="pr-2">
               {/** <Logo className="h-12 w-auto " /> */}
               <img
                 src={Logo}
@@ -30,10 +31,10 @@ const Navbar = () => {
                 className="h-12 w-auto "
                 layout="responsive"
               />
-            </a>
-            <a href="/" className="pr-2">
+            </Link>
+            <Link to="/" className="pr-2">
               Decentralized Library
-            </a>
+            </Link>
 
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
@@ -112,9 +113,9 @@ const Navbar = () => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <a href="/liveclass" rel="noreferrer">
+            <Link to="/liveclass">
               <ButtonOutline>Go Live</ButtonOutline>
-            </a>
+            </Link>
             <a href="https://discord.gg/hecVfZda" target="_blank" rel="noreferrer">
               <ButtonOutline>Join community</ButtonOutline>
             </a>
