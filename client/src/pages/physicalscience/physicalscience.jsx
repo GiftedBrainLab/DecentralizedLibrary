@@ -12,7 +12,7 @@ function classNames(...classes) {
 export default function PhysicalScienceEbooks() {
   const navigate = useNavigate();
   return (
-    <div className=" bg-gray-500 mt-14">
+    <div className=" bg-gray-500 mt-24 sm:mt-14">
       <Navbar />
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-12 bg-gray-500 mt-14">

@@ -3,10 +3,10 @@ import Image from "../assets/Illustration2.png";
 
 const Feature = () => (
   <div
-    className="bg-blue max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
+    className="max-w-screen-xl mt-8 mb-6 md:mt-14 md:mb-14 px-6 md:px-8 lg:px-16 mx-auto"
     id="feature"
   >
-    <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 py-8 my-12">
+    <div className="grid grid-flow-row md:grid-flow-col grid-cols-1 md:grid-cols-2 gap-8 py-8 my-12">
       <div className="flex w-full justify-end">
         <div className="h-full w-full p-4">
           <img

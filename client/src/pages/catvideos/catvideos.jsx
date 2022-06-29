@@ -12,15 +12,14 @@ function classNames(...classes) {
 export default function CatVideos() {
   const navigate = useNavigate();
   return (
-    <div className=" bg-gray-500 mt-14">
+    <div className=" bg-gray-500 ">
       <Navbar />
-
-      <div className="max-w-3xl bg-gray-500 mx-auto px-4 sm:px-6 lg:px-12 mt-14">
+      <div className="max-w-3xl bg-gray-500 mx-auto px-4 sm:px-6 lg:px-12  ">
         <br />
-        <div className="md:items-center">
+        <div className="md:items-center mt-24 sm:mt-14">
           <center>
             <br />
-            <h2 className="text-6xl font-bold leading-1 text-black-900 sm:text-5xl hover:opacity-25">Video Books Categories</h2>
+            <h2 className="text-3xl font-bold leading-1 text-black-900 sm:text-6xl hover:opacity-25">Video Books Categories</h2>
             <br />
             <br />
           </center>

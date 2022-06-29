@@ -1,7 +1,7 @@
 import { Navbar, Footer, Hero, Feature, Pricing, Roadmap } from "./components";
 
 const App = () => (
-  <div className="min-h-screen">
+  <div className="min-h-screen ">
     <div className="bg-test-gray">
       <Navbar />
       <Hero />

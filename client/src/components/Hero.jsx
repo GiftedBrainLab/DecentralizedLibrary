@@ -26,8 +26,8 @@ const Hero = ({
     },
   ],
 }) => (
-  <div className="max-w-screen-xl mt-20 px-8 xl:px-16 mx-auto" id="about">
-    <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16 ">
+  <div className="max-w-screen-xl min-w-fit mt-20 px-5 xl:px-16 mx-auto bg-test-gray" id="about">
+    <div className="grid grid-flow-row md:grid-flow-col grid-rows-1 sm:grid-rows-1 md:grid-cols-2 gap-1 py-6 sm:py-16 ">
       <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
         <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
           Learn and earn made easy with <br /><strong>Decentralized Library</strong>.
@@ -35,7 +35,7 @@ const Hero = ({
         <p className="font-medium leading-10 text-black-500 mt-4 mb-6 text-justify text-lg my-15">
           A web3 library that offers you the opportunity to learn and earn. We offer you you diversity of learning resources both as ebooks and video-books. Materials are curated from various categories. Connect your wallet, select a category, select a book to read or watch a video book, take the quiz and earn NFTs.
         </p>
-        <div className="flex flex-row my-5 ml-2 mr-2 space-x-8 text-2xl">
+        <div className="flex flex-col sm:flex-row sm:my-5 sm:ml-2 sm:mr-2 sm:space-x-8 space-y-4 sm:space-y-0 text-lg sm:text-xl md:text-2xl item-justify-center">
           <Link to="/traverse">
             <ButtonPrimary>Traverse Library</ButtonPrimary>
           </Link>
@@ -47,7 +47,7 @@ const Hero = ({
         <div />
       </div>
       <div className="flex w-full">
-        <div className="h-full w-full mt-10">
+        <div className="h-auto w-2/3 sm:h-max sm:w-full mt-10">
           <img
             src={Student}
             alt="Reading_Student"
@@ -81,7 +81,7 @@ const Hero = ({
         ))}
       </div>
       <div
-        className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"
+        className="absolute bg-black-500 opacity-5 w-11/12 roudned-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"
         style={{ filter: "blur(114px)" }}
       />
     </div>

@@ -6,7 +6,7 @@ import Instagram from "../assets/Icon/instagram.svg";
 
 const Footer = () => (
   <div className="bg-gray-100 pt-20 pb-24">
-    <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-6 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-3 sm:grid-cols-12 gap-4">
+    <div className="max-w-screen-xl w-full mx-auto px-6 md:px-8 lg:px-16 grid grid-rows-6 md:grid-rows-1 grid-flow-row md:grid-flow-col grid-cols-3 md:grid-cols-12 gap-4">
       <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
         {/** <Logo className="h-8 w-auto mb-6" /> */}
         <img
@@ -53,7 +53,7 @@ const Footer = () => (
         </div>
         <p className="text-gray-700">©2022 Decentralized Library</p>
       </div>
-      <div className=" row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
+      <div className=" row-span-2 md:col-span-2 md:col-start-7 md:col-end-9 flex flex-col">
         <p className="text-black-600 mb-4 font-medium text-lg">Categories</p>
         <ul className="text-black-500 ">
           <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
@@ -76,7 +76,7 @@ const Footer = () => (
 
         </ul>
       </div>
-      <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-11 flex flex-col">
+      <div className="row-span-2 md:col-span-2 md:col-start-9 md:col-end-11 flex flex-col">
         <p className="text-black-600 mb-4 font-medium text-lg">Engage</p>
         <ul className="text-black-500">
           <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
@@ -96,7 +96,7 @@ const Footer = () => (
           </li>
         </ul>
       </div>
-      <div className="row-span-2 sm:col-span-2 sm:col-start-11 sm:col-end-13 flex flex-col">
+      <div className="row-span-2 md:col-span-2 md:col-start-11 md:col-end-13 flex flex-col">
         <p className="text-black-600 mb-4 font-medium text-lg">Partners</p>
         <ul className="text-black-500">
           <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">

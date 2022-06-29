@@ -15,12 +15,12 @@ export default function PhysicalScienceEbooks() {
     <div className=" bg-gray-500 mt-14">
       <Navbar />
 
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-12 bg-gray-500 mt-14">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-12 bg-gray-500 mt-24 md:mt-14">
         <br />
         <div className="md:items-center">
           <center>
             <br />
-            <h2 className="text-6xl font-bold leading-1 text-black-900 sm:text-5xl hover:opacity-25">Physical Science Video Section</h2>
+            <h2 className="text-3xl font-bold leading-1 text-black-900 sm:text-5xl hover:opacity-25">Physical Science Video Section</h2>
             <br />
             <br />
           </center>

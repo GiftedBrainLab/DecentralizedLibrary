@@ -89,7 +89,8 @@ export default function CSBook() {
   return (
     <>
       <Navbar />
-      <div className="flex justify-center mt-20 bg-gray-500 mb-12">
+      <h1 className="px-20 mb-14 text-3xl">Available books</h1>
+      <div className="flex justify-center sm:mt-32 mt-20 bg-gray-500 mb-12">
 
         <div className="px-4" style={{ maxWidth: "1600px" }}>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
