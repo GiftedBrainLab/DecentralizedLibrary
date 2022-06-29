@@ -19,13 +19,13 @@ const ServiceCard = ({ color, title, icon, subtitle }) => (
 
 const Roadmap = () => (
   <div className="flex w-full justify-center items-center bg-white-100" id="roadmap">
-    <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4">
+    <div className="flex lg:flex-row flex-col items-center ">
       <div className="flex-1 flex flex-col justify-start items-start">
-        <h1 className="text-white text-3xl sm:text-5xl py-2 ">
+        <h1 className="text-white text-3xl sm:text-5xl mx-10 ">
           Our Roadmap
           <br />
         </h1>
-        <p className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base">
+        <p className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base mx-10">
           Every good and promising projects starts from small and grow to become and indisputable project. This projects is a continuous and dynamic one with this roadmap toward actaulizing a decentralized library
         </p>
       </div>
