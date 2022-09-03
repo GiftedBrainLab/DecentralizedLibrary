@@ -46,10 +46,10 @@ const onboard = Onboard({
     }
   ],
   appMetadata: {
-    name: "PensionFi",
+    name: "DecentralizedLibrary",
     icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
     logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-    description: "Web3 Pension Investment",
+    description: "Web3 Decentralized Library",
     recommendedInjectedWallets: [
       { name: "Coinbase", url: "https://wallet.coinbase.com/" },
       { name: "MetaMask", url: "https://metamask.io" }

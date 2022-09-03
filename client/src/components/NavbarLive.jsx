@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
-import ButtonOutline from "./misc/ButtonOutline.";
+// import ButtonOutline from "./misc/ButtonOutline.";
 import Logo from "../assets/library-logo.svg";
 import ConnectWallet from "./ConnectWallet";
 // import GoLive from "./GoLive";
@@ -40,14 +40,32 @@ const Navbar = () => {
 
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center ">
-            <LinkScroll
+            <Link
               activeClass="active"
-              to="about"
+              to="/"
               spy
               smooth
               duration={1000}
               onSetActive={() => {
-                setActiveLink("about");
+                setActiveLink("home");
+              }}
+              className={
+                `px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative${
+                  activeLink === "home"
+                    ? " text-orange-500 animation-active "
+                    : " text-black-500 hover:text-orange-500 a"}`
+              }
+            >
+              Home
+            </Link>
+            <Link
+              activeClass="active"
+              to="/live"
+              spy
+              smooth
+              duration={1000}
+              onSetActive={() => {
+                setActiveLink("Create-Live-stream");
               }}
               className={
                 `px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative${
@@ -56,73 +74,36 @@ const Navbar = () => {
                     : " text-black-500 hover:text-orange-500 a"}`
               }
             >
-              About
-            </LinkScroll>
-            <LinkScroll
+              Create-Live-stream
+            </Link>
+            <Link
               activeClass="active"
-              to="feature"
+              to="/liveclass"
               spy
               smooth
               duration={1000}
               onSetActive={() => {
-                setActiveLink("feature");
+                setActiveLink("LiveClass");
               }}
               className={
                 `px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative${
-                  activeLink === "feature"
+                  activeLink === "LiveClass"
                     ? " text-orange-500 animation-active "
                     : " text-black-500 hover:text-orange-500 "}`
               }
             >
-              Features
-            </LinkScroll>
-            <LinkScroll
-              activeClass="active"
-              to="howitworks"
-              spy
-              smooth
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("howitworks");
-              }}
-              className={
-                `px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative${
-                  activeLink === "pricing"
-                    ? " text-orange-500 animation-active "
-                    : " text-black-500 hover:text-orange-500 "}`
-              }
-            >
-              How-it-works
-            </LinkScroll>
-
-            <LinkScroll
-              activeClass="active"
-              to="roadmap"
-              spy
-              smooth
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("roadmap");
-              }}
-              className={
-                `px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative${
-                  activeLink === "roadmap"
-                    ? " text-orange-500 animation-active "
-                    : " text-black-500 hover:text-orange-500 "}`
-              }
-            >
-              Roadmap
-            </LinkScroll>
+              Watch-Live-Stream
+            </Link>
           </ul>
+
           <div className="col-start-10 text-sm col-end-20 font-medium flex justify-end items-center space-x-1 md:space-x-3">
-            <Link to="LiveDashboard">
-              <ButtonOutline>Stream Live</ButtonOutline>
+            {/**
+            <Link to="live">
+              <ButtonOutline>Go Live</ButtonOutline>
             </Link>
 
-            <ConnectWallet />
+            <GoLive />
 
-            {/**
-             * <GoLive />
             <Link to="/" className="pr-2">
               Decentralized Library
             </Link>
@@ -130,6 +111,7 @@ const Navbar = () => {
               <ButtonOutline>Join community</ButtonOutline>
             </a>
                 */}
+            <ConnectWallet />
           </div>
 
         </nav>

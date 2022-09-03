@@ -19,6 +19,8 @@ import WatchVideos from "./pages/watching/watching";
 import CatVideos from "./pages/catvideos/catvideos";
 import PhysicalVideos from "./pages/physicalvid/physicalvid";
 import Mint from "./pages/mint/mint";
+import Live from "./pages/live/live";
+import LiveDashboard from "./pages/dashboardLive/dashboardLive";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -26,6 +28,8 @@ ReactDOM.render(
       <Route path="/" element={<App />} />
       <Route path="traverse" element={<TraversePage />} />
       <Route path="liveclass" element={<Liveclass />} />
+      <Route path="live" element={<Live />} />
+      <Route path="LiveDashboard" element={<LiveDashboard />} />
       <Route path="create" element={<Create />} />
       <Route path="coming-soon" element={<Coming />} />
       <Route path="mint" element={<Mint />} />

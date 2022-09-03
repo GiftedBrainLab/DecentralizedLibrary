@@ -46,10 +46,10 @@ const onboard = Onboard({
     }
   ],
   appMetadata: {
-    name: "PensionFi",
+    name: "DecemntralizedLibrary",
     icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
     logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-    description: "Web3 Pension Investment",
+    description: "Web3 Decentralized Library",
     recommendedInjectedWallets: [
       { name: "Coinbase", url: "https://wallet.coinbase.com/" },
       { name: "MetaMask", url: "https://metamask.io" }
@@ -105,7 +105,7 @@ const Welcome = () => {
                 </p>
                 <br />
                 <p className="text-white font-semibold text-2xl mt-1">
-                  Ethereum Address of PensionFi User
+                  Ethereum Address of Decentralized Library User
                 </p>
 
               </div>

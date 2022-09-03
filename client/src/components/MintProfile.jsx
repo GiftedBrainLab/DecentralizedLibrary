@@ -36,8 +36,8 @@ const MintProfile = () => {
     try {
       setTxStatus("Uploading NFT to IPFS & Filecoin via NFT.storage.");
       const metaData = await nftStorage.store({
-        name, // "PensionFi Profile NFT",
-        description, // "This is PensionFi user profile Registration.",
+        name, // "DLib2 Profile NFT",
+        description, // "This is DLib2 user profile Registration.",
         image: inputFile
       });
       setMetaDataURl(getIPFSGatewayURL(metaData.url));
