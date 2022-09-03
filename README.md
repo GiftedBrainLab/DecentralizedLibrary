@@ -12,13 +12,18 @@ The following benefit awaits users of this project
 6. No Loss of Books: Prevent the accidental or intentional loss of information from human consciousness
 
 
-## Getting Started
+## Features
 
-Choose one of the following options to get started:
+The following features are available to users:
 
-- [Download the latest release](https://github.com/holyaustin/DecentralizedLibrary.zip) or
-- Clone the repo: `git clone https://github.com/holyaustin/DecentralizedLibrary.git` or 
-- Fork the repo
+- Profile creation for users and content creators
+- Various categories of learning material 
+- E-books
+- Video Books
+- Short Online quiz
+- Earn NFTs
+- Live class / Tutorial Streaming
+
 
 ## Running the frontpage
 
@@ -162,4 +167,4 @@ Various categories of books are be available in the following areas.
 5.17 Transportation
 
 - [ ] More features loading
-# Decentralized_Library_V2-
+# more integrations
