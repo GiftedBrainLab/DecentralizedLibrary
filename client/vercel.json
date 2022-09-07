@@ -1,0 +1,24 @@
+{
+    "rewrites": [
+      { "source": "/", "destination": "/" },
+      { "source": "/create", "destination": "/create/index.html" },
+      { "source": "/traverse", "destination": "/traverse/index.html" },
+      { "source": "/liveclass", "destination": "/liveclass/index.html" },
+      { "source": "/comingsoon", "destination": "/comingsoon/index.html" },
+      { "source": "/live", "destination": "/live" },
+      { "source": "/dashboard", "destination": "/dashboard/index.html" },
+      { "source": "/catebooks", "destination": "/catebooks/index.html" },
+      { "source": "/createebook", "destination": "/createebook" },
+      { "source": "/csbooks", "destination": "/csbooks/index.html" },
+      { "source": "/reading", "destination": "/reading/index.html" },
+      { "source": "/physicalscience", "destination": "/physicalscience" },
+      { "source": "/catvideos", "destination": "/catvideos/index.html" },
+      { "source": "/createvideobook", "destination": "/createvideobook" },
+      { "source": "/csvideos", "destination": "/csvideos/index.html" },
+      { "source": "/physicalvid", "destination": "/physicalvid/index.html" },
+      { "source": "/watching", "destination": "/about-our-company.html" },
+      { "source": "/profile", "destination": "/profile/index.html" },
+      { "source": "/mint", "destination": "/mint/index.html" },
+      { "source": "/LiveDashboard", "destination": "/dashboardLive/index.html" }
+    ]
+  }

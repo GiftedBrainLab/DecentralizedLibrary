@@ -36,6 +36,7 @@ export default defineConfig({
         watching: resolve(root, "pages/watching", "index.html"),
         profile: resolve(root, "pages/profile", "index.html"),
         mint: resolve(root, "pages/mint", "index.html"),
+        LiveDashboard: resolve(root, "pages/dashboardLive", "index.html"),
       }
     }
   }
