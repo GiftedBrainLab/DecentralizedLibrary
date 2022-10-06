@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from "react";
 import { ethers } from "ethers";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 // import Web3Modal from "web3modal";
 import { Navbar, Footer } from "../../components";
 
@@ -10,6 +10,8 @@ import VideoBook from "../../utils/VideoBook.json";
 
 export default function watchVideo() {
   const navigate = useNavigate();
+  const location = useLocation();
+
   const [nfts, setNfts] = useState([]);
   const [loadingState, setLoadingState] = useState("not-loaded");
   useEffect(() => {
@@ -30,13 +32,17 @@ export default function watchVideo() {
 
   // https://delibrary-quiz.4everland.app/
   // https://delibrary-quiz.on.fleek.co/
-  // const rpcUrl = "https://matic-mumbai.chainstacklabs.com";
+  const rpcUrl = "https://matic-mumbai.chainstacklabs.com";
+  // const rpcUrl = "http://localhost:8545";
+
+  const bookid = location.state.query;
+  console.log("Bookid result is ", bookid);
 
   async function loadVideos() {
     /* create a generic provider and query for unsold market items */
-    const provider = new ethers.providers.JsonRpcProvider("https://matic-mumbai.chainstacklabs.com");
+    const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
     const contract = new ethers.Contract(VideoBookAddress, VideoBook.abi, provider);
-    const data = await contract.fetchAllLibraryItems();
+    const data = await contract.fetchOneNFT(bookid);
     console.log("book data fetched from contract");
     // console.log(provider.getCode(address));
 
@@ -74,17 +80,17 @@ export default function watchVideo() {
   return (
     <>
       <Navbar />
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-14">
         <br />
-        <div className="md:items-center">
+        <div className="md:items-center mt-14">
           <center>
 
-            <h2 className="text-6xl font-bold leading-1 text-black-900 sm:text-5xl hover:opacity-25"> My Watching Tube</h2>
+            <h2 className="mt-14 text-6xl font-bold leading-1 text-black-900 sm:text-5xl hover:opacity-25"> My Watching Tube</h2>
 
           </center>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-4 pt-4">
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-4 pt-4 mb-10">
 
           {
             nfts.map((nft, i) => (

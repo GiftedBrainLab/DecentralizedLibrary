@@ -17,7 +17,7 @@ async function main() {
   await profileContract.deployed();
   console.log("Profile contract deployed to : ", profileContract.address);
 
-  fs.writeFileSync('./config.js', `
+  fs.writeFileSync('../client/config.js', `
   export const EbookAddress = "${ebookContract.address}"
   export const VideoBookAddress = "${videobookContract .address}"
   export const ProfileAddress= "${profileContract.address}"

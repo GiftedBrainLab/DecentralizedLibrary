@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.15;
 
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
@@ -113,6 +113,55 @@ contract Ebook is ERC721URIStorage {
       }
       return items;
     }
+
+ /* Returns only one items by token id   */
+    function fetchOneNFT(uint256 _tokenId) public view returns (LibraryItem[] memory) {
+      uint totalItemCount = _tokenIds.current();
+      uint itemCount = 0;
+      uint currentIndex = 0;
+
+      for (uint i = 0; i < totalItemCount; i++) {
+        if (idToLibraryItem[i + 1].tokenId == _tokenId) {
+          itemCount += 1;
+        }
+      }
+
+      LibraryItem[] memory items = new LibraryItem[](itemCount);
+      for (uint i = 0; i < totalItemCount; i++) {
+        if (idToLibraryItem[i + 1].tokenId == _tokenId) {
+          uint currentId = i + 1;
+          LibraryItem storage currentItem = idToLibraryItem[currentId];
+          items[currentIndex] = currentItem;
+          currentIndex += 1;
+        }
+      }
+      return items;
+    }
+
+    /* Returns only items by there category */
+    function fetchItemsByCategory( string memory category) public view returns (LibraryItem[] memory) {
+      uint totalItemCount = _tokenIds.current();
+      uint itemCount = 0;
+      uint currentIndex = 0;
+
+      for (uint i = 0; i < totalItemCount; i++) {
+        if (keccak256(abi.encodePacked(idToLibraryItem[i + 1].category)) == keccak256(abi.encodePacked(category))) {
+          itemCount += 1;
+        }
+      }
+
+      LibraryItem[] memory items = new LibraryItem[](itemCount);
+      for (uint i = 0; i < totalItemCount; i++) {
+       if (keccak256(abi.encodePacked(idToLibraryItem[i + 1].category)) == keccak256(abi.encodePacked(category))) {
+          uint currentId = i + 1;
+          LibraryItem storage currentItem = idToLibraryItem[currentId];
+          items[currentIndex] = currentItem;
+          currentIndex += 1;
+        }
+      }
+      return items;
+    }
+
 
       /* Returns all read ebook items by an address */
     function fetchMyEbooks() public view returns (LibraryItem[] memory) {

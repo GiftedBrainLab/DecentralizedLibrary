@@ -26,7 +26,7 @@ const MintEbook = () => {
   const [metaDataURL, setMetaDataURl] = useState();
   const [txURL, setTxURL] = useState();
   const [txStatus, setTxStatus] = useState();
-  const [formInput, updateFormInput] = useState({ name: "", description: "", author: "", pages: "", category: "csc" });
+  const [formInput, updateFormInput] = useState({ name: "", description: "", author: "", pages: "", category: "1" });
 
   const handleFileUpload = (event) => {
     console.log("file for upload selected...");
@@ -144,10 +144,11 @@ const MintEbook = () => {
             className="mt-5 border rounded p-4"
             // value={this.state.value}
             onChange={(e) => updateFormInput({ ...formInput, category: e.target.value })}
-          ><option value="csc">Computer Science</option>
-            <option value="mth">Mathematics</option>
-            <option value="eng">Engineering</option>
-            <option value="phy">Physics</option>
+          ><option value="1">Computer Science</option>
+            <option value="2">Mathematics</option>
+            <option value="3">Engineering</option>
+            <option value="4">Physics</option>
+            <option value="5">General category</option>
           </select>
 
           <input

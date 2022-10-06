@@ -168,3 +168,7 @@ Various categories of books are be available in the following areas.
 
 - [ ] More features loading
 # more integrations
+
+Hey @Filecoin community 👋
+
+We made something cool! As a @filecoindevs, we have built Decentralized Library and target to make it a place where knowledge is housed as ebooks and video-books. Books are stored decentrally using IPFS Decentralized Storage. We are using Filecoin/IPFS tech like @nft_storage. try it: https://decentralized-library.vercel.app/

@@ -1,5 +1,5 @@
 
-export const EbookAddress = "0x9566322df4FF3F72398C1309c5a4eb3EeE985b9E";
-export const VideoBookAddress = "0x4CfD01CbF6FAFD34778D5396ed6F50C1C002132C";
-export const ProfileAddress = "0xc642Ba47D5B94C2a5d3a2462E870bce7406DADa2";
-
+  export const EbookAddress = "0xce3cfB50Cd4087e5b0B9dF2446E66b76fD13FC24"
+  export const VideoBookAddress = "0x28cD6cF2Ee6B3Df61dcBB73D4BEdd3f55898a85c"
+  export const ProfileAddress= "0xC16eBEC21b0226700c2082f0C832B65f711aed1b"
+  

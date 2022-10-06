@@ -3,8 +3,6 @@ import { ethers } from "ethers";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-// import { Link } from 'react-router-dom';
-import Web3Modal from "web3modal";
 import { Navbar, Footer } from "../../components";
 
 import { VideoBookAddress } from "../../../config";
@@ -24,12 +22,12 @@ export default function CSVideos() {
     return ipfsGateWayURL;
   };
 
-  // const rpcUrl = "https://matic-mumbai.chainstacklabs.com";
+  const rpcUrl = "https://matic-mumbai.chainstacklabs.com";
   // const rpcUrl = "http://localhost:8545";
 
   async function loadVideos() {
     /* create a generic provider and query for Videos */
-    const provider = new ethers.providers.JsonRpcProvider("https://matic-mumbai.chainstacklabs.com");
+    const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
     const contract = new ethers.Contract(VideoBookAddress, VideoBook.abi, provider);
     const data = await contract.fetchAllLibraryItems();
     console.log("Video data fetched from contract", data);
@@ -59,23 +57,19 @@ export default function CSVideos() {
     setNfts(items);
     setLoadingState("loaded");
   }
-  async function watchVideo(nft) {
-    /* needs the user to sign the transaction, so will use Web3Provider and sign it */
-    console.log("item id clicked is", nft.tokenId);
-    const web3Modal = new Web3Modal();
-    const connection = await web3Modal.connect();
-    const provider = new ethers.providers.Web3Provider(connection);
-    const signer = provider.getSigner();
-    const contract = new ethers.Contract(VideoBookAddress, VideoBook.abi, signer);
 
-    /* user will be prompted to pay the asking proces to complete the transaction */
-    const transaction = await contract.createLibraryWatched(nft.tokenId);
-    await transaction.wait();
-    console.log("read video transaction completed, video should show in UI ");
-    const token = nft.tokenId;
-    console.log("token id is ", token);
-    // loadvideos();
-    navigate("/watching", { state: token });
+  async function watchVideo(nft) {
+    console.log("item id clicked is", nft.tokenId);
+    const id = nft.tokenId;
+    navigate("/watching", {
+      state: {
+        query: id,
+        query2: { id },
+      }
+    });
+
+    console.log("Prop result without {} is ", id);
+    console.log("Prop result with {} is ", { id });
   }
   if (loadingState === "loaded" && !nfts.length) {
     return (
@@ -95,11 +89,9 @@ export default function CSVideos() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
             {nfts.map((nft, i) => (
 
-              <div key={i} className="border shadow rounded-xl overflow-hidden border-2 border-white-500">
+              <div key={i} className="shadow rounded-xl overflow-hidden border-2 border-white-500">
                 <iframe
                   title="video"
-                  frameBorder="0"
-                  scrolling="no"
                   height="400px"
                   width="100%"
                   src={`${nft.image}#toolbar=0`}

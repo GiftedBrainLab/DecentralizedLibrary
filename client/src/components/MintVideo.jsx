@@ -26,7 +26,7 @@ const MintVideoBook = () => {
   const [metaDataURL, setMetaDataURl] = useState();
   const [txURL, setTxURL] = useState();
   const [txStatus, setTxStatus] = useState();
-  const [formInput, updateFormInput] = useState({ name: "", description: "", creator: "", time: "", category: "csc" });
+  const [formInput, updateFormInput] = useState({ name: "", description: "", creator: "", time: "", category: "1" });
 
   const handleFileUpload = (event) => {
     console.log("file is uploaded");
@@ -70,7 +70,7 @@ const MintVideoBook = () => {
       const connection = await web3Modal.connect();
       const provider = new ethers.providers.Web3Provider(connection);
       const category = formInput.category.toString();
-      console.log("Book category is ", category);
+      console.log("Video category is ", category);
       const connectedContract = new ethers.Contract(VideoBookAddress, VideoBook.abi, provider.getSigner());
       console.log("Connected to contract", VideoBookAddress);
       console.log("IPFS blockchain uri is ", metadata.url);
@@ -111,9 +111,9 @@ const MintVideoBook = () => {
 
   const getIPFSGatewayURL = (ipfsURL) => {
     const urlArray = ipfsURL.split("/");
-    console.log("urlArray = ", urlArray);
+    // console.log("urlArray = ", urlArray);
     const ipfsGateWayURL = `https://${urlArray[2]}.ipfs.nftstorage.link/${urlArray[3]}`;
-    console.log("ipfsGateWayURL = ", ipfsGateWayURL);
+    // console.log("ipfsGateWayURL = ", ipfsGateWayURL);
     return ipfsGateWayURL;
   };
 
@@ -144,10 +144,11 @@ const MintVideoBook = () => {
             className="mt-5 border rounded p-4"
             // value={this.state.value}
             onChange={(e) => updateFormInput({ ...formInput, category: e.target.value })}
-          ><option value="csc">Computer Science</option>
-            <option value="mth">Mathematics</option>
-            <option value="eng">Engineering</option>
-            <option value="phy">Physics</option>
+          ><option value="1">Computer Science</option>
+            <option value="2">Mathematics</option>
+            <option value="3">Engineering</option>
+            <option value="4">Physics</option>
+            <option value="5">General category</option>
           </select>
 
           <input
