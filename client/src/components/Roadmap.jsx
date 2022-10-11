@@ -26,7 +26,7 @@ const Roadmap = () => (
           <br />
         </h1>
         <p className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base mx-10">
-          Every good and promising projects starts from small and grow to become and indisputable project. This projects is a continuous and dynamic one with this roadmap toward actaulizing a decentralized library
+          Every good and promising projects starts from small and grow to become an indisputable project. This projects is a continuous and dynamic one with this roadmap toward actaulizing a decentralized library
         </p>
       </div>
 
