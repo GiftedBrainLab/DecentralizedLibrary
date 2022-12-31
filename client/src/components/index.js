@@ -17,3 +17,5 @@ export { default as Traverse } from "./Traverse";
 export { default as Roadmap } from "./Roadmap";
 export { default as GoLive } from "./GoLive";
 export { default as Stream } from "./Stream";
+export { default as AddCount } from "./AddCount";
+export { default as GetCount } from "./GetCount";

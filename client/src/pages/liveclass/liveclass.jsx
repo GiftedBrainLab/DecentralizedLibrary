@@ -2,8 +2,10 @@
 import { React, useState } from "react";
 import ReactHlsPlayer from "react-hls-player";
 import { NavbarLive, Footer } from "../../components";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import GetCount from "../../components/GetCount";
+
 import "../../hooks/styles.css";
+
 
 export default function Liveclass() {
   // const router = useRouter();
@@ -24,7 +26,7 @@ export default function Liveclass() {
         <div className="md:items-center">
           <center>
 
-            <h2 className="text-6xl font-bold leading-1 text-black-900 sm:text-5xl hover:opacity-25 pt-20"> Streaming Live</h2>
+            <h2 className="text-6xl font-bold leading-1 text-black-900 sm:text-5xl hover:opacity-25 pt-20"> Streaming Live</h2> <GetCount />
 
           </center>
         </div>
