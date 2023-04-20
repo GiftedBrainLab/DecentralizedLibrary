@@ -37,7 +37,7 @@ const Hero = ({
         </p>
         <div className="flex flex-col sm:flex-row sm:my-5 sm:ml-2 sm:mr-2 sm:space-x-8 space-y-4 sm:space-y-0 text-lg sm:text-xl md:text-2xl item-justify-center">
           <Link to="/traverse">
-            <ButtonPrimary>Traverse Library</ButtonPrimary>
+            <ButtonPrimary>Explore Library</ButtonPrimary>
           </Link>
           <Link to="/create">
             <ButtonPrimary>Create Collections</ButtonPrimary>

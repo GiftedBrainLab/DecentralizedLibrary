@@ -1,15 +1,17 @@
 # [Decentralized Library Dapp](https://decentralized-library.vercel.app/) 
 
 ## Introduction
-The need to implement more web2 solutions into web3 have necesitated this idea. Decentralized library is a no-censorship library where users go to read books and watch video books using the web3 wallet.
+The need to implement more Web2 solutions into Web3 has necessitated this idea. Decentralized library is a no-censorship library where users go to read books and watch video books using the Web3 wallet.
 
 The following benefit awaits users of this project
-1.  Hundreds of Academic E-Books: The Library has more books that you could imagine. E-books repository are decentralized (IPFS Storage).
-2. Lot of Video-Books: The full video books are here for you. if you cannot read the ebook format, you can read you favorite textbooks by watching them (IPFS Storage).
-3. No Political Censorship: No fear from government of your country not allowing certain books. You can read or watch them here.
+
+1. Hundreds of Academic E-Books: The Library has more books than you could imagine. E-books repositories are decentralized (IPFS Storage).
+2. Lot of Video-Books: The full video books are here for you. if you cannot read the ebook format, you can read your favorite textbooks by watching them (IPFS Storage).
+3. No Political Censorship: No fear from the government of your country not allowing certain books. You can read or watch them here.
 4. Learn and Earn: The very First decentralized Library where you LEARN and EARN.
-5. Live Class Streaming: Lecturers / Teachers can use this platform to shedule live teaching and learning. just contact us
+5. Live Class Streaming: Lecturers / Teachers can use this platform to schedule live teaching and learning. just contact us
 6. No Loss of Books: Prevent the accidental or intentional loss of information from human consciousness
+
 
 
 ## Features

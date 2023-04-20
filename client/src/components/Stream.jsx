@@ -37,7 +37,8 @@ const count = async () => {
       console.log("Connected to contract for AddCount", CounterAddress);
       console.log("Connected to contract for AddCount", connectedContract);
       
-      const transaction = await connectedContract.incrementCounter();
+      //const transaction = await connectedContract.incrementCounter();
+      const transaction = await connectedContract.increment177();
       console.log("New count successfully created and sent to Blockchain");
       await transaction.wait();
       return  transaction;

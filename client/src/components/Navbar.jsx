@@ -4,8 +4,7 @@ import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "./misc/ButtonOutline.";
 import Logo from "../assets/library-logo.svg";
 import ConnectWallet from "./ConnectWallet";
-// import GoLive from "./GoLive";
-// import "./Navbar.css";
+//import UnstoppableOnboard from "./UnstoppableOnboard";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -121,7 +120,10 @@ const Navbar = () => {
 
             <ConnectWallet />
 
-            {/**
+{/**
+            <UnstoppableOnboard />
+
+            
              * <GoLive />
             <Link to="/" className="pr-2">
               Decentralized Library
