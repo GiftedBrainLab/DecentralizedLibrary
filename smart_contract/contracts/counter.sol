@@ -8,12 +8,7 @@ contract TestCounter {
     function incrementCounter() public {
         count += 1;
     }
-        function increment177() public {
-        count += 177;
-    }
-        function increment13() public {
-        count += 13;
-    }
+
     function decrementCounter() public {
       uint value = getCount();
       require(value > 0, "Counter: decrement overflow");

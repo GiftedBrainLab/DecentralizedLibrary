@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { ethers } from "ethers";
 import Web3Modal from "web3modal";
 import TestCounter from "../utils/TestCounter.json";
-import { CounterAddress } from "../../config2";
+import { CounterAddress } from "../../config3";
 
 const AddCount = () => {
   //const navigate = useNavigate();

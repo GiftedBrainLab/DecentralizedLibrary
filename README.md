@@ -169,7 +169,9 @@ Various categories of books are be available in the following areas.
 5.17 Transportation
 
 - [ ] More features loading
-# more integrations
+# more integrations (Work in Progress)
+Change onboarding process, new multi-wallet login, rework display quiz, NFT rewards categorized.
+
 
 Hey @Filecoin community 👋
 
