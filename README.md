@@ -1,7 +1,7 @@
 # [Decentralized Library Dapp](https://decentralized-library.vercel.app/) 
 
 ## Introduction
-The need to implement more Web2 solutions into Web3 has necessitated this idea. Decentralized library is a no-censorship library where users go to read books and watch video books using the Web3 wallet.
+The need to implement more Web2 solutions into Web3 has necessitated this idea. Decentralized library is a no-censorship library where users go to read books and watch video books using the Web3 wallet. This books could be paid or tipped.
 
 The following benefit awaits users of this project
 
@@ -176,3 +176,6 @@ Change onboarding process, new multi-wallet login, rework display quiz, NFT rewa
 Hey @Filecoin community 👋
 
 We made something cool! As a @filecoindevs, we have built Decentralized Library and target to make it a place where knowledge is housed as ebooks and video-books. Books are stored decentrally using IPFS Decentralized Storage. We are using Filecoin/IPFS tech like @nft_storage. try it: https://decentralized-library.vercel.app/
+
+UPDATE
+Working on the paid or tip creator feature.

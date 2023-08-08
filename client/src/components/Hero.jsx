@@ -33,7 +33,7 @@ const Hero = ({
           Learn and earn made easy with <br /><strong>Decentralized Library</strong>.
         </h1> <br />
         <p className="font-medium leading-10 text-black-500 mt-4 mb-6 text-justify text-lg my-15">
-          A web3 library that offers you the opportunity to learn and earn. We offer you diversity of learning resources both as ebooks and video-books. Materials are curated from various categories. Connect your wallet, select a category, select a book to read or watch a video book, take the quiz and earn NFTs.
+          A web3 library that offers you the opportunity to learn and earn. We offer you diversity of learning resources both as ebooks and video-books. Materials are curated from various categories. Connect your wallet, select a category, select a book to read or watch a video book, take the quiz and earn NFTs. You can buy books or tip creators.
         </p>
         <div className="flex flex-col sm:flex-row sm:my-5 sm:ml-2 sm:mr-2 sm:space-x-8 space-y-4 sm:space-y-0 text-lg sm:text-xl md:text-2xl item-justify-center">
           <Link to="/traverse">
