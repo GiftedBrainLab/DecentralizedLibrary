@@ -1,8 +1,8 @@
-# [Decentralized Library Dapp](https://decentralized-library.vercel.app/)
+# [Decentralized Library dApp](https://decentralized-library.vercel.app/)
 
 ## Overview
 
-This proposal outlines the creation of a decentralized library for web3 books and resources, which leverages blockchain technology and decentralized storage to provide a censorship-resistant, accessible, and verifiable platform for users to access and share educational and informational content.
+This project outlines the creation of a decentralized library for web3 books and resources, which leverages blockchain technology and decentralized storage to provide a censorship-resistant, accessible, and verifiable platform for users to access and share educational and informational content.
 
 ### Key Features
 
